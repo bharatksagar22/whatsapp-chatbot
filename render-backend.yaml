@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: whatsapp-backend
+    env: python
+    repo: https://github.com/bharatksagar22/whatsapp-chatbot
+    branch: main
+    buildCommand: pip install -r whatsapp-backend/requirements.txt
+    startCommand: gunicorn -w 1 -b 0.0.0.0:8000 whatsapp-backend.src.main:app
+    workingDir: whatsapp-backend
+    autoDeploy: true
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: PORT
+        value: 8000
