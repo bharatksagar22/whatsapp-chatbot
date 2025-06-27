@@ -3,7 +3,7 @@ services:
     name: whatsapp-chatbot-dashboard
     env: node
     branch: main
-    buildCommand: yarn install && yarn build
+    buildCommand: corepack enable && yarn install && yarn build
     startCommand: yarn start
     rootDir: whatsapp-chatbot-dashboard
     envVars:
