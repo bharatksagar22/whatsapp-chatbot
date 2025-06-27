@@ -1,0 +1,21 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+*.log
+
+# Node / React
+node_modules/
+build/
+npm-debug.log
+.env.development
+.env.production
+venv/
+node_modules/
+__pycache__/
+.env
+*.log
+build/
